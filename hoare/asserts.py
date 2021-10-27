@@ -18,7 +18,7 @@ def request_status(request: dict, expected: str):
 
 
 def task_response_status(task_response, expected):
-    assert task_response == expected
+    assert task_response.status == expected
 
 
 def asset_status(request: dict, expected: str):
